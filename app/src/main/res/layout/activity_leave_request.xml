@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F6FF"
+    tools:context=".LeaveRequest">
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="737dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-6dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="637dp"
+            android:background="#3652AD"
+            app:srcCompat="@drawable/add" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="555dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:translationY="170dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="طلب اجازه"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/reqEmpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=" اسمك"
+                android:inputType="text"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/reqReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=" سبب الاجازه"
+                android:inputType="text"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/reqLeaveRDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="تاريخ الاجازه"
+                android:inputType="date"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="عدد ايام الاجازه"
+                android:inputType="date"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/employeeNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="رقم الوظيفي"
+                android:inputType="date"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/job_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="العنوان الوطيفي"
+                android:inputType="date"
+                android:padding="12dp" />
+
+
+            <Button
+                android:id="@+id/addNewReqBtm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تقديم الطلب"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/checkBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تحقق من الطلبات"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
